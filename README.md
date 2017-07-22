@@ -29,7 +29,7 @@ The goals / steps of this project are the following:
 [image8]: ./output_images/download(9).png  "Output"
 [image10]: ./output_images/download(10).png  "Output"
 [image11]: ./output_images/download(11).png  "Output"
-[video1]: ./results/video_out_4.mp4 "Video"
+[video1]: ./video_out_final.mp4 "Video"
 
 ## [Rubric Points](https://review.udacity.com/#!/rubrics/571/view)
 
@@ -135,7 +135,7 @@ A reasonable comparison can be found from the map of the road where the video wa
 
 ### Pipeline (video)
 
-Here's a [link to my video result](./project_video.mp4)
+Here's a [link to my video result](./video_out_final.mp4)
 
 ---
 
@@ -143,4 +143,4 @@ Here's a [link to my video result](./project_video.mp4)
 
 #### 1. Problems / issues and suggestions for improvement.
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+This pipeline works perfectly during most parts of the video, however there were areas, mostly the shade, where more fine-tuning of the color thresholding might be necessary. Further tracking of the detected lanes history would also be helpful to improve the results in the future.
