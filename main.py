@@ -16,11 +16,7 @@ from IPython.display import HTML
 # Get data for calibration
 images = glob.glob('camera_cal/calibration*.jpg')
 mtx, dist = camera_calibration(images, nx=9, ny=6)
-
-
 img_bgr = cv2.imread('test_images/straight_lines1.jpg')
-#img_bgr = cv2.undistort(img_bgr, mtx, dist, None, mtx)
-#cv2.imwrite('test_images/undistorted_straight.jpg', img_bgr)
 
 #undist = cv2.undistort(img_bgr, mtx, dist, None, mtx)
 Right = Line()
@@ -125,4 +121,3 @@ white_clip = clip1.fl_image(process_image) #NOTE: this function expects color im
 
 white_clip.write_videofile(white_output, audio=False)
 
-print(Left.parallel)
